@@ -1,0 +1,34 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^([a-z]+)/([0-9]+)/? $1.php?id=$2 [L]
+
+# Новый адрес главной страницы
+DirectoryIndex public/index.php
+
+# Перенаправляем с HTTPS на HTTP
+RewriteCond %{SERVER_PORT} ^443$ [OR]
+RewriteCond %{HTTPS} =on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+# Редирект домена с WWW на домен без WWW
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Убираем лишние слеши на конце URL
+RewriteCond %{THE_REQUEST} //
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$0 [R=301,L]
+
+# Убираем index.php на конце
+#RewriteCond %{REQUEST_URI} ^(.*)/index\.php$
+#RewriteRule ^(.*)index\.php$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+# Убираем index.html на конце
+#RewriteCond %{REQUEST_URI} ^(.*)/index\.html$
+#RewriteRule ^(.*)index\.html$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+# Страницы пользовательских ошибок
+ErrorDocument 404 /404.html
+
+

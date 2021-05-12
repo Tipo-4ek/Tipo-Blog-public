@@ -1,0 +1,207 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+body
+{
+	font-size: 25px;
+	position: relative;
+	background: url(back.png);
+}
+
+
+#color1
+{
+	background: red;
+	height: 100px;
+}
+
+#color2
+{
+	background: white;
+	
+}
+
+.banner
+{
+	background: grey;
+
+}
+
+.banner_d
+{
+	
+	object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+
+#color4
+{
+	background: #111;
+	height: 100px;
+}
+
+#color5
+{
+	background: orange;
+	height: 100px;
+}
+
+#color6
+{
+	background: #f5f5f5;
+	min-height: 100px;
+}
+
+.ADimg
+{
+	height:40px;
+	width:100%;
+}
+
+.ADimg:hover
+{
+	cursor: pointer
+}
+
+.Adblockhead
+{
+	display: block;
+	position: relative;
+	padding: 0 12px;
+	overflow: hidden;
+	cursor: pointer;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	height: 40px;
+	font: 13px/1 Arial, Tahoma, sans-serif;
+}
+
+.Adblockhead,
+.Adblockhead:link,
+.Adblockhead:visited,
+.Adblockhead:hover,
+.Adblockhead:active {
+color: #000000;
+
+background: #EEEFFF;
+
+}
+
+
+.w-Adblockhead {
+display: block;
+position: relative;
+padding: 0 140px 0 0;
+margin: 0 auto;
+
+min-width: 816px;
+max-width: 1116px;
+
+}
+
+
+.AD-icon-head {
+display: inline-block;
+vertical-align: top;
+height: 40px;
+width: 87px;
+background: url(https://r.mradx.net/img/E9/C5DEE0.png) 50% no-repeat;
+margin-left: 0px;
+}
+
+
+
+.AD-head-text {
+display: inline-block;
+vertical-align: middle;
+height: 40px;
+line-height: 40px;
+
+
+padding-left: 28px;
+
+
+
+padding-right: 28px;
+
+}
+
+.AD-head-actionbutton {
+display: inline-block;
+vertical-align: top;
+
+
+color: #fff;
+
+
+height: 40px;
+line-height: 40px;
+
+
+width: 145px;
+background: url(https://r.mradx.net/img/B0/8AFD60.png) 50% no-repeat;
+text-align: center;
+
+}
+
+.tb__close-39754317 {
+position: absolute;
+top: 0;
+right: 50px;
+z-index: 1;
+cursor: pointer;
+padding: 0 10px 0 0;
+height: 40px;
+line-height: 40px;
+}
+
+.tb__close__icon-39754317 {
+position: absolute;
+display: block;
+left: 5px;
+width: 13px;
+height: 13px;
+line-height: 13px;
+text-align: center;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+text-decoration: none;
+
+
+background: #EEEFFF;
+
+
+
+color: #000000;
+
+
+
+margin-top: 14px;
+
+}
+.buttonclose {
+margin-left: 25px;
+}
+
+.tb__close-39754317:hover .buttonclose {
+text-decoration: underline;
+}
+
+.tb__age-39754317 {
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+height: 40px;
+padding: 0 0 0 18px;
+line-height: 40px;
+}
+
+
+nav
+{
+	border-radius:3px;
+}
